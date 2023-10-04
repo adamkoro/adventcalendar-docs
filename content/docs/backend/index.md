@@ -1,3 +1,3 @@
 # Backend Documentation
-- [public-api](public-api.md)
-- [admin-api](admin-api.md)
+- [public-api](/docs/backend/public-api)
+- [admin-api](/docs/backend/admin-api)
