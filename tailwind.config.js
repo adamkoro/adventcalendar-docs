@@ -7,6 +7,7 @@ export default {
     `composables/**/*.{js,ts}`,
     `plugins/**/*.{js,ts}`,
     `utils/**/*.{js,ts}`,
+    `content/**/*.md`,
     `App.{js,ts,vue}`,
     `app.{js,ts,vue}`,
     `Error.{js,ts,vue}`,
@@ -16,6 +17,8 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 
