@@ -1,5 +1,4 @@
 <template>
-  <DarkLightButton />
   <UContainer class="flex justify-center">
     <ContentDoc class="prose
     dark:text-white
