@@ -7,18 +7,18 @@ This application stores data in PostgreSQL database. It has 2 main parts:
 
 ### Environment variables
 
-| Variable     | Description              | Default Value  | Values             |
+| Variable     | Description              | Default Value  | Available Values   |
 | ------------ | ------------------------ | -------------- | ------------------ |
 | LOG_LEVEL    | Log level                | info           | info; error; debug |
-| SECRET_KEY   | Secret key for JWT token | secret         |
-| PORT         | API port                 | 8080           |
-| METRICS_PORT | API metrics port         | 8081           |
-| DB_USER      | Database user            | adventcalendar |
-| DB_PASSWORD  | Database user password   | adventalendar  |
-| DB_HOST      | Database host            | localhost      |
-| DB_PORT      | Databaase port           | 5432           |
-| DB_NAME      | Database name            | adventcalendar |
-| DB_SSLMODE   | SSL mode                 | disable        |
+| SECRET_KEY   | Secret key for JWT token | secret         | string             |
+| PORT         | API port                 | 8080           | number             |
+| METRICS_PORT | API metrics port         | 8081           | number             |
+| DB_USER      | Database user            | adventcalendar | string             |
+| DB_PASSWORD  | Database user password   | adventalendar  | string             |
+| DB_HOST      | Database host            | localhost      | string             |
+| DB_PORT      | Databaase port           | 5432           | number             |
+| DB_NAME      | Database name            | adventcalendar | string             |
+| DB_SSLMODE   | SSL mode                 | disable        | disable            |
 
 ### Public endpoints
 
