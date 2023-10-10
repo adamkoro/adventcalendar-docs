@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-white dark:bg-slate-800 shadow-md rounded ">
+    <footer class="bg-white dark:bg-slate-800 shadow-md rounded">
         <div class="flex items-center justify-between w-full mx-auto mt-auto max-w-screen">
             <nav class="nav font-semibold">
                 <ul class="flex flex-wrap">
@@ -17,13 +17,5 @@
     </footer>
 </template>
 <script setup>
-import { ref } from 'vue'
-const colorMode = useColorMode()
-const picture = computed(() => {
-    if (colorMode.value === 'dark') {
-        return "/github-mark-white.svg"
-    } else {
-        return "/github-mark.svg"
-    }
-})
+useColorMode()
 </script>
