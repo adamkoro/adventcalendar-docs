@@ -23,3 +23,5 @@
     " />
   </UContainer>
 </template>
+<script setup>
+</script>
