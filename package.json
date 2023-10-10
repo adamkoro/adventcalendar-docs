@@ -5,7 +5,7 @@
     "build": "nuxt build",
     "dev": "NUXT_PORT=3040 nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "NUXT_PORT=3040 nuxt preview"
   },
   "devDependencies": {
     "@nuxt/content": "^2.8.2",
