@@ -14,12 +14,12 @@
                     <NuxtLink to="/">Home</NuxtLink>
                 </li>
                 <li class="p-4 cursor-pointer"
-                    :class="{ 'border-b-2 border-primary-500  border-opacity-100 text-primary-500': route.path.startsWith('/docs/frontend') }">
-                    <NuxtLink to="/docs/frontend">Frontend</NuxtLink>
+                    :class="{ 'border-b-2 border-primary-500  border-opacity-100 text-primary-500': route.path.startsWith('/frontend') }">
+                    <NuxtLink to="/frontend">Frontend</NuxtLink>
                 </li>
                 <li class="p-4 cursor-pointer"
-                    :class="{ 'border-b-2 border-primary-500  border-opacity-100 text-primary-500': route.path.startsWith('/docs/backend') }">
-                    <NuxtLink to="/docs/backend">Backend</NuxtLink>
+                    :class="{ 'border-b-2 border-primary-500  border-opacity-100 text-primary-500': route.path.startsWith('/backend') }">
+                    <NuxtLink to="/backend">Backend</NuxtLink>
                 </li>
             </ul>
         </nav>
