@@ -2,10 +2,11 @@
 
 Admin API is a REST API for managing users. Authentication is based on JWT(Json Web Token).
 This application stores data in PostgreSQL database. It has 2 main parts:
+
 - [admin-api-init](https://github.com/adamkoro/adventcalendar-backend/tree/main/admin-api-init) - application for database initialization
 - [admin-api](https://github.com/adamkoro/adventcalendar-backend/tree/main/admin-api) - main application (REST API)
 
-### Environment variables
+## Environment variables
 
 | Variable     | Description              | Default Value  | Available Values   |
 | ------------ | ------------------------ | -------------- | ------------------ |
@@ -20,7 +21,7 @@ This application stores data in PostgreSQL database. It has 2 main parts:
 | DB_NAME      | Database name            | adventcalendar | string             |
 | DB_SSLMODE   | SSL mode                 | disable        | disable            |
 
-### Public endpoints
+## Public endpoints
 
 - `GET` **/api/ping**
   - Health check
@@ -28,21 +29,25 @@ This application stores data in PostgreSQL database. It has 2 main parts:
 - `GET` **/metrics**
   - Prometheus metrics
 
-### Private endpoints - Authentication required
+## Private endpoints - Authentication required
+
 Authentication is required for all endpoints below.
 Based on JWT(Json Web Token) authentication. Before using private endpoints, you need to get JWT token from `/api/auth/login` endpoint.
 
 - `GET` **/api/admin/usermanage/user**
   - Get user
-  - Payload (example): 
+  - Payload (example):
+
     ```json
     {
       "username": "testuser1"
     }
     ```
+
 - `POST` **/api/admin/usermanage/user**
   - Create user
-  - Payload (example): 
+  - Payload (example):
+
     ```JSON
     {
       "username": "testuser1",
@@ -50,9 +55,11 @@ Based on JWT(Json Web Token) authentication. Before using private endpoints, you
       "password": "testpassword1"
     }
     ```
+
 - `PUT` **/api/admin/usermanage/user**
   - Update user
-  - Payload (example): 
+  - Payload (example):
+
     ```JSON
     {
       "username": "testuser1",
@@ -60,13 +67,16 @@ Based on JWT(Json Web Token) authentication. Before using private endpoints, you
       "password": "testpassword1"
     }
     ```
+
 - `DELETE` **/api/admin/usermanage/user**
   - Delete user
-  - Payload (example): 
+  - Payload (example):
+
     ```JSON
     {
       "username": "testuser1"
     }
     ```
+
 - `GET` **/api/admin/usermanage/users**
   - Get all users
