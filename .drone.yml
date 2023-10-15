@@ -35,7 +35,7 @@ steps:
     commands:
       - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD registry.adamkoro.com
       - docker buildx create --use --name mybuilder
-      - docker buildx build --platform linux/amd64 -t registry.adamkoro.com/adventcalendar/docs/admin:latest -t registry.adamkoro.com/adventcalendar/docs/admin:${DRONE_COMMIT_SHA:0:7} -f ./Dockerfile . --push
+      - docker buildx build --platform linux/amd64 -t registry.adamkoro.com/adventcalendar/docs:latest -t registry.adamkoro.com/adventcalendar/docs:${DRONE_COMMIT_SHA:0:7} -f ./Dockerfile . --push
 volumes:
   - name: dockersock
     temp: {}
